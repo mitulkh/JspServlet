@@ -83,7 +83,7 @@
 					<div class="formbg">
 						<div class="formbg-inner padding-horizontal--48">
 							<span class="padding-bottom--15">Sign Up</span>
-							<form id="stripe-login" action="<%=request.getContextPath()%>/register" method="post">
+							<form id="stripe-login" action="register" method="post">
 
 							<div class="field padding-bottom--24">
 								<label class="required">First Name</label> 

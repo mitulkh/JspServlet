@@ -23,16 +23,9 @@ public class EmployeeServlet extends HttpServlet {
 		employeeDao = new EmployeeDao();
 	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws IOException, ServletException {
-		response.getWriter().append("served at: ").append(request.getContextPath());
-
-		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-		dispatcher.forward(request, response);
-	}
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 		int registerEmployeeId = 0;
 
 		String firstName = request.getParameter("firstname");
